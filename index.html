@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dice Roll</title>
+</head>
+<body>
+    <h1>Dice Roll Game</h1>
+    <h3>You roll 2 dice, if you roll a sum that is 7 or above, you win. If you roll any number under 7 you lose your bet.</h3>
+    <p>Click the button to roll the dice:</p>
+    <button onclick="rollDice1(), rollDice2(), placeBet()">Roll Dice</button>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="total"></p>
+    <div id="dice-container">
+    <p id="dice1"></p>
+    <p id="dice2"></p>
+    </div>
+    <div id="history-container">
+    <h2>History</h2>
+    <ul id="history"></ul>
+    </div>
+    <p>Your balance: $<span id="balance">10</span></p>
+    <label for="betAmount">Bet amount:</label>
+    <input type="number" id="betAmount" min="1" max="10" value="1">
+    <footer>
+        <p>&copy; 2023 Pedro Simoes</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
